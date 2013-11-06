@@ -1,0 +1,72 @@
+% !TEX encoding = UTF-8 Unicode
+\documentclass{article}
+	\usepackage[utf8]{inputenc}
+	\usepackage[czech]{babel}
+	\usepackage[IL2]{fontenc}
+	\usepackage[total={20cm,25cm}, top=3cm, left=1cm]{geometry}
+	\usepackage{amsmath}
+	\usepackage{amssymb}
+	\usepackage{graphicx}
+	\usepackage{hyperref}
+	\usepackage{multicol}
+	\usepackage{amsfonts} \usepackage{latexsym} % matematika
+	\usepackage{multirow} \usepackage{multicol} % sloÄenÃ­ bunÄk
+	\usepackage{wrapfig} \usepackage{epsfig} % obtÃ©kÃ¡nÃ­ textu
+	\title{LaTeX}
+	\author{Pavel Dostál}
+	\setcounter{secnumdepth}{3}
+	\setcounter{tocdepth}{3}
+	\newcommand{\hl}{\hline}
+\begin{document}
+	\pagestyle{empty}
+	\tableofcontents
+\newpage
+	\pagestyle{plain}
+	\setcounter{page}{1}
+	\begin{multicols}{2}
+		\section{Matematika}
+		\begin{tabular}{lll}
+			$\doteq$		&	\verb|\doteq|		&	Přibližně			\\
+			$\neq$		&	\verb|\neq|		&	Nerovná se		\\
+			$\ge$		&	\verb|\ge|			&	Větší nebo rovno	\\
+			$\le$			&	\verb|\le|			&	Menší nebo rovno	\\
+			$\cup$		&	\verb|\cup|			&	Sjednoceno		\\
+			$\cap$		&	\verb|\cap|			&	Průnik			\\
+			$\in$			&	\verb|\in|			&	Náleží			\\
+			$\emptyset$	&	\verb|\emptyset|	&	Prázdná množina	\\
+			$\sum$		&	\verb|\sum|		&	Suma			\\
+			$\to$			&	\verb|\to|			&	Do				\\
+			$\pm$		&	\verb|\pm|			&	Plus mínus		\\
+			$\sqrt{2}$		&	\verb|\sqrt{2}|		&	Odmocnina		\\
+			$\sqrt[3]{2}$	&	\verb|\sqrt[3]{2}|	&	N-tá odmocnina	
+		\end{tabular}
+		\section{Logika}
+		\begin{tabular}{lll}
+			$\wedge$			&	\verb|\wedge|			&	Konjunkce (a současně)			\\
+			$\vee$			&	\verb|\vee|				&	Disjunkce (nebo)				\\
+			$\Rightarrow$		&	\verb|\Rightarrow|		&	Implikace (jestliže, pak)			\\
+			$\Leftrightarrow$	&	\verb|\Leftrightarrow|		&	Ekvivalence (právě tehdy, když)	\\
+			$\neg$			&	\verb|\neg|			&	Negace						\\
+			$\forall$			&	\verb|\forall|			&	Pro každé						\\
+			$\exists$			&	\verb|\exists|			&	Existuje 
+		\end{tabular}
+		\columnbreak
+		\section{Zkratky}
+		\begin{verbatim}
+			\newcommand{\pr}{\begin{figure}[h]}
+			\newcommand{\epr}{\end{figure}\nopagebreak}
+			\newcommand{\hr}{\hrule}
+			\newcommand{\hl}{\hline}
+		\end{verbatim}
+		\section{Odkazy}
+		\begin{itemize}
+			\item \href{http://mks.mff.cuni.cz/info/tex/psani.php}{Matematický korespondenční seminář MUNI}
+			\item \href{http://cs.wikipedia.org/wiki/Matematický_symbol}{Wikipedia - Matematický symbol}
+			\item \href{http://www.artofproblemsolving.com/Wiki/index.php/LaTeX:Symbols}{Art of problem solving}
+			\item \href{http://mat.fsv.cvut.cz/konickova/navody/ltxstruc.pdf}{ČVUT Stručný popis}
+			\item \href{http://ftp.cstug.cz/pub/tex/CTAN/info/symbols/comprehensive/symbols-letter.pdf}{CSTug symbols}
+			\item \href{http://mff.lokiware.info/LaTeX}{mff.lokiware}
+			\item \href{http://detexify.kirelabs.org/classify.html}{Detexify$^2$}
+		\end{itemize}
+	\end{multicols}
+\end{document}

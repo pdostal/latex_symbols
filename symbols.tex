@@ -3,7 +3,7 @@
 	\usepackage[utf8]{inputenc}
 	\usepackage[czech]{babel}
 	\usepackage[IL2]{fontenc}
-	\usepackage[total={20cm,10cm}, top=3cm, left=1cm]{geometry}
+	\usepackage[total={20cm,15cm}, top=3cm, left=1cm]{geometry}
 	\usepackage{amsmath}
 	\usepackage{amssymb}
 	\usepackage{graphicx}
@@ -17,40 +17,48 @@
 	\setcounter{secnumdepth}{3}
 	\setcounter{tocdepth}{3}
 	\newcommand{\hl}{\hline}
+	\newcommand{\dlim}{\displaystyle\lim}
 \begin{document}
 	\pagestyle{empty}
 	\begin{multicols}{2}
 		\section{Matematika}
 		\begin{tabular}{lll}
 			$\doteq$		&	\verb|\doteq|		&	Přibližně			\\
-			$\neq$		&	\verb|\neq|		&	Nerovná se		\\
+			$\neq$		&	\verb|\neq|			&	Nerovná se		\\
 			$\ge$		&	\verb|\ge|			&	Větší nebo rovno	\\
 			$\le$			&	\verb|\le|			&	Menší nebo rovno	\\
-			$\cup$		&	\verb|\cup|			&	Sjednoceno		\\
-			$\cap$		&	\verb|\cap|			&	Průnik			\\
-			$\in$			&	\verb|\in|			&	Náleží			\\
-			$\emptyset$	&	\verb|\emptyset|	&	Prázdná množina	\\
 			$\sum$		&	\verb|\sum|		&	Suma			\\
 			$\to$			&	\verb|\to|			&	Do				\\
 			$\pm$		&	\verb|\pm|			&	Plus mínus		\\
 			$\sqrt{2}$		&	\verb|\sqrt{2}|		&	Odmocnina		\\
-			$\sqrt[3]{2}$	&	\verb|\sqrt[3]{2}|	&	N-tá odmocnina	
+			$\sqrt[3]{2}$	&	\verb|\sqrt[3]{2}|		&	N-tá odmocnina		\\
+			$\dlim_{x\rightarrow\infty}$
+						&	\verb|\lim_{x\to\infty}|
+											&	Limita x jdoucí k n.	\\
+		\end{tabular}
+		\section{Množiny}
+		\begin{tabular}{lll}
+			$\cup$		&	\verb|\cup|			&	Sjednoceno		\\
+			$\cap$		&	\verb|\cap|			&	Průnik			\\
+			$\in$			&	\verb|\in|			&	Náleží			\\
+			$\emptyset$	&	\verb|\emptyset|		&	Prázdná množina	\\
 		\end{tabular}
 		\section{Logika}
 		\begin{tabular}{lll}
-			$\wedge$			&	\verb|\wedge|			&	Konjunkce (a současně)			\\
-			$\vee$			&	\verb|\vee|				&	Disjunkce (nebo)				\\
-			$\Rightarrow$		&	\verb|\Rightarrow|		&	Implikace (jestliže, pak)			\\
-			$\Leftrightarrow$	&	\verb|\Leftrightarrow|		&	Ekvivalence (právě tehdy, když)	\\
-			$\neg$			&	\verb|\neg|			&	Negace						\\
-			$\forall$			&	\verb|\forall|			&	Pro každé						\\
-			$\exists$			&	\verb|\exists|			&	Existuje 
+			$\wedge$			&	\verb|\wedge|		&	Konjunkce (a současně)		\\
+			$\vee$			&	\verb|\vee|			&	Disjunkce (nebo)			\\
+			$\Rightarrow$		&	\verb|\Rightarrow|	&	Implikace (jestliže, pak)		\\
+			$\Leftrightarrow$	&	\verb|\Leftrightarrow|	&	Ekvivalence (právě tehdy, když)	\\
+			$\neg$			&	\verb|\neg|			&	Negace					\\
+			$\forall$			&	\verb|\forall|		&	Pro každé					\\
+			$\exists$			&	\verb|\exists|		&	Existuje 
 		\end{tabular}
 		\columnbreak
 		\section{Zkratky}
 		\begin{verbatim}
 			\newcommand{\pr}{\begin{figure}[h]}
 			\newcommand{\epr}{\end{figure}\nopagebreak}
+			\newcommand{\dlim}{\displaystyle\lim}
 			\newcommand{\hr}{\hrule}
 			\newcommand{\hl}{\hline}
 		\end{verbatim}
@@ -60,6 +68,7 @@
 			\item \href{http://cs.wikipedia.org/wiki/Matematický_symbol}{Wikipedia - Matematický symbol}
 			\item \href{http://www.artofproblemsolving.com/Wiki/index.php/LaTeX:Symbols}{Art of problem solving}
 			\item \href{http://mat.fsv.cvut.cz/konickova/navody/ltxstruc.pdf}{ČVUT Stručný popis}
+			\item \href{http://www.cs.vsb.cz/benes/vyuka/latex/math.htm}{VŠB Matematické prostředí}
 			\item \href{http://ftp.cstug.cz/pub/tex/CTAN/info/symbols/comprehensive/symbols-letter.pdf}{CSTug symbols}
 			\item \href{http://mff.lokiware.info/LaTeX}{mff.lokiware}
 			\item \href{http://detexify.kirelabs.org/classify.html}{Detexify$^2$}

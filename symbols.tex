@@ -28,6 +28,7 @@
 \begin{document}
 	\pagestyle{empty}
 	\begin{multicols}{2}
+
 		\section{Matematika}
 		\begin{tabular}{ p{2em} p{7.5em} l }
 			$\doteq$			&	\verb|\doteq|				&	Přibližně							\\
@@ -41,6 +42,7 @@
 			$\sqrt[3]{2}$	&	\verb|\sqrt[3]{2}|	&	N-tá odmocnina				\\
 			$\dlim$				&	\verb|\lim_{}|			&	Limita x jdoucí k n.	\\
 		\end{tabular}
+
 		\section{Množiny}
 		\begin{tabular}{ p{2em} p{7.5em} l }
 			$\cup$			&	\verb|\cup|				&	Sjednoceno			\\
@@ -48,6 +50,7 @@
 			$\in$				&	\verb|\in|				&	Náleží					\\
 			$\emptyset$	&	\verb|\emptyset|	&	Prázdná množina	\\
 		\end{tabular}
+
 		\section{Logika}
 		\begin{tabular}{ p{2em} p{7.5em} l }
 			$\wedge$					&	\verb|\wedge|		&	Konjunkce (a současně)									\\
@@ -58,7 +61,9 @@
 			$\forall$					&	\verb|\forall|		&	Pro každé															\\
 			$\exists$					&	\verb|\exists|		&	Existuje
 		\end{tabular}
-		\columnbreak
+
+	\columnbreak
+
 		\section{Zkratky}
 		\begin{verbatim}
 			\newcommand{\pr}{\begin{figure}[h]}
@@ -67,6 +72,7 @@
 			\newcommand{\hr}{\hrule}
 			\newcommand{\hl}{\hline}
 		\end{verbatim}
+
 		\section{Odkazy}
 		\begin{itemize}
 			\item \href{http://mks.mff.cuni.cz/info/tex/psani.php}{Matematický korespondenční seminář MUNI}
@@ -78,5 +84,38 @@
 			\item \href{http://mff.lokiware.info/LaTeX}{mff.lokiware}
 			\item \href{http://detexify.kirelabs.org/classify.html}{Detexify$^2$}
 		\end{itemize}
+
 	\end{multicols}
+
+\pagebreak
+
+	\section*{Diferenciální počet}
+	\begin{tabular}{p{4cm}p{4cm}p{4cm}}
+		$(konst.)' = 0$								&	$\sin(x)' = \cos(x)$							&	$\arcsin(x)' = \frac{1}{\sqrt{1-x^2}}$\\
+		$(x^{a})' = a \cdot x^{a-1}$				&	$\cos(x)' = -\sin(x)$							&	$\arccos(x)' = -\frac{1}{\sqrt{1-x^2}}$\\
+		$(a^{x})' = a^{x} \cdot \ln(a)$				&	$\tan(x)' = \frac{1}{\cos^2{x}}$				&	$\arctan(x)' = \frac{1}{1+x^2}$\\
+		$\log_{a}(x)' = \frac{1}{x \cdot \ln(a)}$	&	$\cot(x)' = \frac{1}{\sin^2{x}}$				&	$arccot(x)' = -\frac{1}{1+x^2}$\\
+		$(e^{x})' = e^{x}$							&	$(x)' = 1$										&	$\left(\sqrt{x}\right)' = \frac{1}{2 \cdot \sqrt{x}}$\\
+		$(\ln{x})' = \frac{1}{x}$					&	$\left(\frac{1}{x}\right)' = -\frac{1}{x^{2}}$	&	$(\log{x})' = \frac{1}{x \cdot \ln{10}}$\\
+		$(u \pm v)' = u' \pm v'$					&	$(u \cdot v)' = u' \cdot v + v \cdot u'$		&	$\left(\frac{u}{v}\right)' = \frac{u' \cdot v - u \cdot v'}{v^{2}}$\\
+		$[f(g(x))]' = f'(g(x)) \cdot g'(x)$			&	$f(x)^{g(x)} = e^{g(x) \cdot \ln{g(x)}}$		&	$(k \cdot f(x))' = k \cdot f'(x)$
+	\end{tabular}
+
+	\section*{Goniometrické funkce}
+	\begin{tabular}{p{4cm}p{4cm}p{4cm}}
+		$\sin{(x \pm 2k\pi)} = \sin{x}$				&	$\sin{(-x)} = -\sin{x}$							&	$\tan{x} = \frac{\sin{x}}{\cos{x}}$\\
+		$\cos{(x \pm 2k\pi)} = \cos{x}$				&	$\cos{(-x)} = \cos{x}$							&	$\cot{x} = \frac{\cos{x}}{\sin{x}}$\\
+		$\tan{(x \pm k\pi)} = \tan{x}$				&	$\tan{(-x)} = -\tan{x}$							&	$\tan{x} \cdot \cot{x} = 1$\\
+		$\cot{(x \pm k\pi)} = \cot{x}$				&	$\cot{(-x)} = -\cot{x}$							&	$\sin^{2}{x} \cdot \cos^{2}{x} = 1$
+	\end{tabular}
+
+	\subsection*{Tabulka}
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+		\hline$x$	&	$-\frac{\pi}{2}$	&	$-\frac{\pi}{3}$		&	$-\frac{\pi}{4}$		&	$-\frac{\pi}{6}$		&	$0$	&	$\frac{\pi}{6}$			&	$\frac{\pi}{4}$			&	$\frac{\pi}{3}$			&	$\frac{\pi}{2}$	&	$\frac{2\pi}{3}$		&	$\frac{2\pi}{4}$		&	$\frac{2\pi}{6}$		&	$\pi$\\\hline
+		$\sin{x}$	&	$-1$				&	$-\frac{\sqrt{3}}{2}$	&	$-\frac{\sqrt{2}}{2}$	&	$-\frac{1}{2}$			&	$0$	&	$\frac{1}{2}$			&	$\frac{\sqrt{2}}{2}$	&	$\frac{\sqrt{3}}{2}$	&	$1$				&	$\frac{\sqrt{3}}{2}$	&	$\frac{\sqrt{2}}{2}$	&	$\frac{1}{2}$			&	$0$\\\hline
+		$\cos{x}$	&	$0$					&	$\frac{1}{2}$			&	$\frac{\sqrt{2}}{2}$	&	$\frac{\sqrt{3}}{2}$	&	$1$	&	$\frac{\sqrt{3}}{2}$	&	$\frac{\sqrt{2}}{2}$	&	$\frac{1}{2}$			&	$0$				&	$-\frac{1}{2}$			&	$-\frac{\sqrt{2}}{2}$	&	$-\frac{\sqrt{3}}{2}$	&	$-1$\\\hline
+		$\tan{x}$	&	$*$					&	$-\sqrt{3}$				&	$-1$					&	$-\frac{\sqrt{3}}{3}$	&	$0$	&	$\frac{\sqrt{3}}{3}$	&	$1$						&	$\sqrt{3}$				&	$*$				&	$-\sqrt{3}$				&	$-1$					&	$-\frac{\sqrt{3}}{3}$	&	$0$\\\hline
+		$\cot{x}$	&	$0$					&	$-\frac{\sqrt{3}}{3}$	&	$-1$					&	$-\sqrt{3}$				&	$*$	&	$\sqrt{3}$				&	$1$						&	$\frac{\sqrt{3}}{3}$	&	$0$				&	$-\frac{\sqrt{3}}{3}$	&	$-1$					&	$-\sqrt{3}$				&	$*$\\\hline
+	\end{tabular}
+
 \end{document}

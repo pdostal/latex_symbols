@@ -122,23 +122,38 @@
 	\end{multicols}
 
 	\section*{Goniometrické funkce}
-	\begin{tabular}{|p{4cm}|p{4cm}|p{4cm}|}\hline
-		$\sin{(x \pm 2k\pi)} = \sin{x}$				&	$\sin{(-x)} = -\sin{x}$							&	$\tan{x} = \frac{\sin{x}}{\cos{x}}$\\\hline
-		$\cos{(x \pm 2k\pi)} = \cos{x}$				&	$\cos{(-x)} = \cos{x}$							&	$\cot{x} = \frac{\cos{x}}{\sin{x}}$\\\hline
-		$\tan{(x \pm k\pi)} = \tan{x}$				&	$\tan{(-x)} = -\tan{x}$							&	$\tan{x} \cdot \cot{x} = 1$\\\hline
-		$\cot{(x \pm k\pi)} = \cot{x}$				&	$\cot{(-x)} = -\cot{x}$							&	$\sin^{2}{x} \cdot \cos^{2}{x} = 1$\\\hline
-	\end{tabular}
-
-	\begingroup
-		\centering
-		\renewcommand{\arraystretch}{1.55}
-		\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}\hline
-			$x$				&	$0$	&	$\frac{\pi}{6}$				&	$\frac{\pi}{4}$				&	$\frac{\pi}{3}$				&	$\frac{\pi}{2}$	\\\hline
-			$\sin{x}$	&	$0$	&	$\frac{1}{2}$					&	$\frac{\sqrt{2}}{2}$	&	$\frac{\sqrt{3}}{2}$	&	$1$							\\\hline
-			$\cos{x}$	&	$1$	&	$\frac{\sqrt{3}}{2}$	&	$\frac{\sqrt{2}}{2}$	&	$\frac{1}{2}$					&	$0$							\\\hline
-			$\tan{x}$	&	$0$	&	$\frac{\sqrt{3}}{3}$	&	$1$										&	$\sqrt{3}$						&	$*$							\\\hline
-			$\cot{x}$	&	$*$	&	$\sqrt{3}$						&	$1$										&	$\frac{\sqrt{3}}{3}$	&	$0$							\\\hline
-		\end{tabular}
-	\endgroup
+	\begin{multicols}{4}
+		\begin{itemize}
+			\item $\sin{(x \pm 2k\pi)} = \sin{x}$
+			\item $\cos{(x \pm 2k\pi)} = \cos{x}$
+			\item $\tan{(x \pm k\pi)} = \tan{x}$
+			\item $\cot{(x \pm k\pi)} = \cot{x}$
+			\\\\
+		\columnbreak
+			\item $\sin{(-x)} = -\sin{x}$
+			\item $\cos{(-x)} = \cos{x}$
+			\item $\tan{(-x)} = -\tan{x}$
+			\item $\cot{(-x)} = -\cot{x}$
+			\\\\
+		\columnbreak
+			\item $\tan{x} = \frac{\sin{x}}{\cos{x}}$
+			\item $\cot{x} = \frac{\cos{x}}{\sin{x}}$
+			\item $\tan{x} \cdot \cot{x} = 1$
+			\item $\sin^{2}{x} \cdot \cos^{2}{x} = 1$
+			\\
+		\end{itemize}
+		\columnbreak
+		\begingroup
+			\centering
+			\renewcommand{\arraystretch}{1.55}
+			\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}\hline
+				$x$				&	$0$	&	$\frac{\pi}{6}$				&	$\frac{\pi}{4}$				&	$\frac{\pi}{3}$				&	$\frac{\pi}{2}$	\\\hline
+				$\sin{x}$	&	$0$	&	$\frac{1}{2}$					&	$\frac{\sqrt{2}}{2}$	&	$\frac{\sqrt{3}}{2}$	&	$1$							\\\hline
+				$\cos{x}$	&	$1$	&	$\frac{\sqrt{3}}{2}$	&	$\frac{\sqrt{2}}{2}$	&	$\frac{1}{2}$					&	$0$							\\\hline
+				$\tan{x}$	&	$0$	&	$\frac{\sqrt{3}}{3}$	&	$1$										&	$\sqrt{3}$						&	$*$							\\\hline
+				$\cot{x}$	&	$*$	&	$\sqrt{3}$						&	$1$										&	$\frac{\sqrt{3}}{3}$	&	$0$							\\\hline
+			\end{tabular}
+		\endgroup
+	\end{multicols}
 
 \end{document}

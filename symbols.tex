@@ -90,16 +90,36 @@
 \pagebreak
 
 	\section*{Diferenciální počet}
-	\begin{tabular}{|p{4cm}|p{4cm}|p{4cm}|}\hline
-		$(konst.)' = 0$								&	$\sin(x)' = \cos(x)$							&	$\arcsin(x)' = \frac{1}{\sqrt{1-x^2}}$\\\hline
-		$(x^{a})' = a \cdot x^{a-1}$				&	$\cos(x)' = -\sin(x)$							&	$\arccos(x)' = -\frac{1}{\sqrt{1-x^2}}$\\\hline
-		$(a^{x})' = a^{x} \cdot \ln(a)$				&	$\tan(x)' = \frac{1}{\cos^2{x}}$				&	$\arctan(x)' = \frac{1}{1+x^2}$\\\hline
-		$\log_{a}(x)' = \frac{1}{x \cdot \ln(a)}$	&	$\cot(x)' = \frac{1}{\sin^2{x}}$				&	$arccot(x)' = -\frac{1}{1+x^2}$\\\hline
-		$(e^{x})' = e^{x}$							&	$(x)' = 1$										&	$\left(\sqrt{x}\right)' = \frac{1}{2 \cdot \sqrt{x}}$\\\hline
-		$(\ln{x})' = \frac{1}{x}$					&	$\left(\frac{1}{x}\right)' = -\frac{1}{x^{2}}$	&	$(\log{x})' = \frac{1}{x \cdot \ln{10}}$\\\hline
-		$(u \pm v)' = u' \pm v'$					&	$(u \cdot v)' = u' \cdot v + v \cdot u'$		&	$\left(\frac{u}{v}\right)' = \frac{u' \cdot v - u \cdot v'}{v^{2}}$\\\hline
-		$[f(g(x))]' = f'(g(x)) \cdot g'(x)$			&	$f(x)^{g(x)} = e^{g(x) \cdot \ln{g(x)}}$		&	$(k \cdot f(x))' = k \cdot f'(x)$\\\hline
-	\end{tabular}
+	\begin{multicols}{3}
+		\begin{itemize}
+			\item $(konst.)' = 0$
+			\item $(x^{a})' = a \cdot x^{a-1}$
+			\item $(a^{x})' = a^{x} \cdot \ln(a)$
+			\item $\log_{a}(x)' = \frac{1}{x \cdot \ln(a)}$
+			\item $(e^{x})' = e^{x}$
+			\item $(\ln{x})' = \frac{1}{x}$
+			\item $(u \pm v)' = u' \pm v'$
+			\item $[f(g(x))]' = f'(g(x)) \cdot g'(x)$
+		\columnbreak
+			\item $\sin(x)' = \cos(x)$
+			\item $\cos(x)' = -\sin(x)$
+			\item $\tan(x)' = \frac{1}{\cos^2{x}}$
+			\item $\cot(x)' = \frac{1}{\sin^2{x}}$
+			\item $(x)' = 1$
+			\item $\left(\frac{1}{x}\right)' = -\frac{1}{x^{2}}$
+			\item $(u \cdot v)' = u' \cdot v + v \cdot u'$
+			\item $f(x)^{g(x)} = e^{g(x) \cdot \ln{g(x)}}$
+		\columnbreak
+			\item $\arcsin(x)' = \frac{1}{\sqrt{1-x^2}}$
+			\item $\arccos(x)' = -\frac{1}{\sqrt{1-x^2}}$
+			\item $\arctan(x)' = \frac{1}{1+x^2}$
+			\item $arccot(x)' = -\frac{1}{1+x^2}$
+			\item $\left(\sqrt{x}\right)' = \frac{1}{2 \cdot \sqrt{x}}$
+			\item $(\log{x})' = \frac{1}{x \cdot \ln{10}}$
+			\item $\left(\frac{u}{v}\right)' = \frac{u' \cdot v - u \cdot v'}{v^{2}}$
+			\item $(k \cdot f(x))' = k \cdot f'(x)$
+		\end{itemize}
+	\end{multicols}
 
 	\section*{Goniometrické funkce}
 	\begin{tabular}{|p{4cm}|p{4cm}|p{4cm}|}\hline
@@ -110,8 +130,8 @@
 	\end{tabular}
 
 	\begingroup
+		\centering
 		\renewcommand{\arraystretch}{1.55}
-		\subsection*{Tabulka}
 		\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}\hline
 			$x$	&	$-\frac{\pi}{2}$	&	$-\frac{\pi}{3}$		&	$-\frac{\pi}{4}$		&	$-\frac{\pi}{6}$		&	$0$	&	$\frac{\pi}{6}$			&	$\frac{\pi}{4}$			&	$\frac{\pi}{3}$			&	$\frac{\pi}{2}$	&	$\frac{2\pi}{3}$		&	$\frac{2\pi}{4}$		&	$\frac{2\pi}{6}$		&	$\pi$\\\hline
 			$\sin{x}$	&	$-1$				&	$-\frac{\sqrt{3}}{2}$	&	$-\frac{\sqrt{2}}{2}$	&	$-\frac{1}{2}$			&	$0$	&	$\frac{1}{2}$			&	$\frac{\sqrt{2}}{2}$	&	$\frac{\sqrt{3}}{2}$	&	$1$				&	$\frac{\sqrt{3}}{2}$	&	$\frac{\sqrt{2}}{2}$	&	$\frac{1}{2}$			&	$0$\\\hline

@@ -25,6 +25,7 @@
 	\setcounter{tocdepth}{3}
 	\newcommand{\hl}{\hline}
 	\newcommand{\dlim}{\displaystyle\lim}
+	\newcommand{\mbf}[1]{\mathbf{#1}}
 \begin{document}
 	\pagestyle{empty}
 	\begin{multicols}{2}
@@ -68,6 +69,7 @@
 		\begin{verbatim}
 			\newcommand{\pr}{\begin{figure}[h]}
 			\newcommand{\epr}{\end{figure}\nopagebreak}
+			\newcommand{\mbf}[1]{\mathbf{#1}}
 			\newcommand{\dlim}{\displaystyle\lim}
 			\newcommand{\hr}{\hrule}
 			\newcommand{\hl}{\hline}
@@ -86,11 +88,11 @@
 		\end{itemize}
 
 		\begin{tabular}{cc|cccc}
-				$A$	&	$B$	&	$A \wedge B$	&	$A \vee B$	&	$A \Rightarrow B$	&	$A \Leftrightarrow B$	\\\hline
-				$1$	&	$1$	&	$0$						&	$1$					&	$1$							&	$1-x	x$								\\
-				$1$	&	$0$	&	$0$						&	$1$					&	$0$							&	$0$											\\
-				$0$	&	$1$	&	$0$						&	$1$					&	$1$							&	$0$											\\
-				$0$	&	$0$	&	$1$						&	$0$					&	$1$							&	$1$											\\
+				$\mbf{A}$	&	$\mbf{B}$	&	$\mbf{A \wedge B}$	&	$\mbf{A \vee B}$	&	$\mbf{A \Rightarrow B}$	&	$\mbf{A \Leftrightarrow B}$	\\\hline
+				$\mbf{1}$	&	$\mbf{1}$	&	$0$						&	$1$					&	$1$							&	$1-x	x$								\\
+				$\mbf{1}$	&	$\mbf{0}$	&	$0$						&	$1$					&	$0$							&	$0$											\\
+				$\mbf{0}$	&	$\mbf{1}$	&	$0$						&	$1$					&	$1$							&	$0$											\\
+				$\mbf{0}$	&	$\mbf{0}$	&	$1$						&	$0$					&	$1$							&	$1$											\\
 			\end{tabular}
 
 	\end{multicols}
@@ -135,11 +137,11 @@
 			\centering
 			\renewcommand{\arraystretch}{1.55}
 			\begin{tabular}{p{1.5em}|ccccccccc}
-				$x$				&	$0$	&	$\frac{\pi}{6}$				&	$\frac{\pi}{4}$				&	$\frac{\pi}{3}$				&	$\frac{\pi}{2}$	\\\hline
-				$\sin{x}$	&	$0$	&	$\frac{1}{2}$					&	$\frac{\sqrt{2}}{2}$	&	$\frac{\sqrt{3}}{2}$	&	$1$							\\
-				$\cos{x}$	&	$1$	&	$\frac{\sqrt{3}}{2}$	&	$\frac{\sqrt{2}}{2}$	&	$\frac{1}{2}$					&	$0$							\\
-				$\tan{x}$	&	$0$	&	$\frac{\sqrt{3}}{3}$	&	$1$										&	$\sqrt{3}$						&	$*$							\\
-				$\cot{x}$	&	$*$	&	$\sqrt{3}$						&	$1$										&	$\frac{\sqrt{3}}{3}$	&	$0$							\\
+												&	$\mbf{0}$	&	$\mbf{\frac{\pi}{6}}$	&	$\mbf{\frac{\pi}{4}}$	&	$\mbf{\frac{\pi}{3}}$	&	$\mbf{\frac{\pi}{2}}$	\\\hline
+				$\mbf{\sin{x}}$	&	$0$				&	$\frac{1}{2}$					&	$\frac{\sqrt{2}}{2}$	&	$\frac{\sqrt{3}}{2}$	&	$1$										\\
+				$\mbf{\cos{x}}$	&	$1$				&	$\frac{\sqrt{3}}{2}$	&	$\frac{\sqrt{2}}{2}$	&	$\frac{1}{2}$					&	$0$										\\
+				$\mbf{\tan{x}}$	&	$0$				&	$\frac{\sqrt{3}}{3}$	&	$1$										&	$\sqrt{3}$						&	$*$										\\
+				$\mbf{\cot{x}}$	&	$*$				&	$\sqrt{3}$						&	$1$										&	$\frac{\sqrt{3}}{3}$	&	$0$										\\
 			\end{tabular}
 		\endgroup
 		\columnbreak

@@ -1,0 +1,49 @@
+% !TEX encoding = UTF-8 Unicode
+\documentclass{article}
+	\usepackage[utf8]{inputenc}
+	\usepackage[czech]{babel}
+	\usepackage[IL2]{fontenc}
+	\usepackage[paperwidth=55em,paperheight=145mm]{geometry}
+	\setlength{\hoffset}{-5em}
+	\setlength{\voffset}{-3em}
+	\setlength{\textheight}{24.0cm}
+	\setlength{\textwidth}{18cm}
+	\usepackage[pdftex]{graphicx}
+	\usepackage{amsmath}
+	\usepackage{amssymb}
+	\usepackage{hyperref}
+	\usepackage{multicol}
+	\usepackage{amsfonts}
+	\usepackage{latexsym}
+	\usepackage{multirow}
+	\usepackage{multicol}
+	\usepackage{wrapfig}
+	\usepackage{epsfig}
+	\usepackage{subfiles}
+	\title{LaTeX}
+	\author{Pavel Dostál}
+	\setcounter{secnumdepth}{3}
+	\setcounter{tocdepth}{3}
+	\newcommand{\hl}{\hline}
+	\newcommand{\dlim}{\displaystyle\lim}
+	\newcommand{\mbf}[1]{\mathbf{#1}}
+\begin{document}
+	\pagestyle{empty}
+	\begin{multicols}{2}
+		\subfile{sub_matematika}
+		\subfile{sub_mnoziny}
+		\subfile{sub_logika}
+	\columnbreak
+		\subfile{sub_zkratky}
+		\subfile{sub_odkazy}
+		\subfile{sub_pravdivostnitabulka}
+	\end{multicols}
+\pagebreak
+	\subfile{sub_diferencialnipocet}
+	\subfile{sub_goniometrickefunkce}
+\pagebreak
+	\subfile{sub_zavorky}
+	\subfile{sub_mocniny}
+	\subfile{sub_odmocniny}
+	\subfile{sub_logaritmy}
+\end{document}

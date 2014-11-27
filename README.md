@@ -1,4 +1,6 @@
-latex_symbols
-=============
+# LaTeX math & symbols cheat sheet
 
-Short list of LaTeX symbols
+## Description
+- Short list of LaTeX symbols
+- Little cheat sheet of mathematical formulas
+- Optimized for compact view on computer & tablet
